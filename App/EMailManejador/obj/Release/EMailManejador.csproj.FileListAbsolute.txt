@@ -21,3 +21,10 @@ C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\EMailManejador\obj\Release
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\EMailManejador\obj\Release\EMailManejador.dll
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\EMailManejador\obj\Release\EMailManejador.pdb
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\EMailManejador\obj\Release\EMailManejador.csprojAssemblyReference.cache
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\EMailManejador\bin\Release\EMailManejador.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\EMailManejador\bin\Release\EMailManejador.pdb
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\EMailManejador\obj\Release\EMailManejador.csprojAssemblyReference.cache
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\EMailManejador\obj\Release\EMailManejador.csproj.ResolveComReference.cache
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\EMailManejador\obj\Release\EMailManejador.csproj.CoreCompileInputs.cache
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\EMailManejador\obj\Release\EMailManejador.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\EMailManejador\obj\Release\EMailManejador.pdb

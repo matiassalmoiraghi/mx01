@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>GPZMMEX</DataSourceReference>
+      <CommandText>SELECT rfc, nombreLoc, calle, colonia, ciudad, municipio, estado, pais, codigoPostal, rutaYNombreDelLogo
+FROM dbo.fCfdEmisor()</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="rfc">
+        <DataField>rfc</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="nombreLoc">
+        <DataField>nombreLoc</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="calle">
+        <DataField>calle</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="colonia">
+        <DataField>colonia</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ciudad">
+        <DataField>ciudad</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="municipio">
+        <DataField>municipio</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="estado">
+        <DataField>estado</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="pais">
+        <DataField>pais</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="codigoPostal">
+        <DataField>codigoPostal</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="rutaYNombreDelLogo">
+        <DataField>rutaYNombreDelLogo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

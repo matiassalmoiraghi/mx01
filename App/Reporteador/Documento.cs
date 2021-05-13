@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 using System.Text;
 using Comun;
 
@@ -39,20 +40,29 @@ namespace Reporteador
             numErr = 0;
             List<string> ValoresParametros = new List<string>();
             string prmTabla = "SOP30200";
+
+            //MessageBox.Show("Dentro PDF");
+
             try
             {
                 if (_Param.emite && _Param.reporteador.Equals("SSRS"))
                 {
+                    
                     ValoresParametros.Add(shSoptype.ToString());
                     ValoresParametros.Add(strSopnumbe);
 
                     rSSRS.renderPDF(ValoresParametros, strRutaYNomArchivo + ".pdf");
+
+                 //   MessageBox.Show("Dentro SSRS Msj " + rSSRS.ultimoMensaje);
+                 //   MessageBox.Show("Dentro SSRS Err " + rSSRS.numError);
+                    
                     mensajeErr = rSSRS.ultimoMensaje;
                     numErr = rSSRS.numError;
                 }
 
                 if (!_Param.emite && _Param.reporteador.Equals("SSRS"))
                 {
+                    //MessageBox.Show("Dentro SSRS 2" + strRutaYNomArchivo);
                     ValoresParametros.Add(shSoptype.ToString());
                     ValoresParametros.Add(strSopnumbe);
                     ValoresParametros.Add(_Conexion.Intercompany);

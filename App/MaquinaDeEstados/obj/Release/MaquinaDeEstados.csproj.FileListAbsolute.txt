@@ -32,3 +32,13 @@ C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\MaquinaDeEstados\obj\Relea
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\MaquinaDeEstados\obj\Release\MaquinaDeEstados.csproj.CopyComplete
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\MaquinaDeEstados\obj\Release\MaquinaDeEstados.dll
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\MaquinaDeEstados\obj\Release\MaquinaDeEstados.pdb
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\MaquinaDeEstados\bin\Release\MaquinaDeEstados.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\MaquinaDeEstados\bin\Release\MaquinaDeEstados.pdb
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\MaquinaDeEstados\bin\Release\Comun.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\MaquinaDeEstados\bin\Release\Ionic.Zip.Reduced.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\MaquinaDeEstados\bin\Release\Comun.pdb
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\MaquinaDeEstados\obj\Release\MaquinaDeEstados.csproj.CoreCompileInputs.cache
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\MaquinaDeEstados\obj\Release\MaquinaDeEstados.csproj.CopyComplete
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\MaquinaDeEstados\obj\Release\MaquinaDeEstados.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\MaquinaDeEstados\obj\Release\MaquinaDeEstados.pdb
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\MaquinaDeEstados\obj\Release\MaquinaDeEstados.csprojAssemblyReference.cache

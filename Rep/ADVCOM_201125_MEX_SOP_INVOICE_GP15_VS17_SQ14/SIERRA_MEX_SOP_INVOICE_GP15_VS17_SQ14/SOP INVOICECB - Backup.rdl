@@ -1,0 +1,3980 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSets>
+    <DataSet Name="SOPINVOICE">
+      <SharedDataSet>
+        <SharedDataSetReference>DS_CFDICOBROS</SharedDataSetReference>
+        <QueryParameters>
+          <QueryParameter Name="@SOPNUMBE">
+            <Value>=Parameters!SOPNUMBE.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
+          <QueryParameter Name="@SOPTYPE">
+            <Value>=Parameters!SOPTYPE.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
+        </QueryParameters>
+      </SharedDataSet>
+      <Fields>
+        <Field Name="SOPTYPE">
+          <DataField>soptype</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SOPNUMBE">
+          <DataField>sopnumbe</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOCDATE">
+          <DataField>docdate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ClaveProdServ">
+          <DataField>ClaveProdServ</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ClaveUnidad">
+          <DataField>ClaveUnidad</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cantidad">
+          <DataField>cantidad</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="rutaYNomArchivoNet">
+          <DataField>rutaYNomArchivoNet</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="rutaFileDrive">
+          <DataField>rutaFileDrive</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUSTNAME">
+          <DataField>CUSTNAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="custnmbr">
+          <DataField>custnmbr</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FormaDePagoP">
+          <DataField>FormaDePagoP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MonedaP">
+          <DataField>MonedaP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TipoCambioP">
+          <DataField>TipoCambioP</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Monto">
+          <DataField>Monto</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="NumOperacion">
+          <DataField>NumOperacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RfcEmisorCtaOrd">
+          <DataField>RfcEmisorCtaOrd</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NomBancoOrdExt">
+          <DataField>NomBancoOrdExt</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AMOUNT_LETTERS">
+          <DataField>AMOUNT_LETTERS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CtaOrdenante">
+          <DataField>CtaOrdenante</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RfcEmisorCtaBen">
+          <DataField>RfcEmisorCtaBen</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CtaBeneficiario">
+          <DataField>CtaBeneficiario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IdDocumento">
+          <DataField>IdDocumento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MonedaDR">
+          <DataField>MonedaDR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RfcPAC">
+          <DataField>RfcPAC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TipoCambioDR">
+          <DataField>TipoCambioDR</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TipoRelacion">
+          <DataField>TipoRelacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MetodoDePagoDR">
+          <DataField>MetodoDePagoDR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Leyenda">
+          <DataField>Leyenda</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tprl_descripcion">
+          <DataField>tprl_descripcion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NumParcialidad">
+          <DataField>NumParcialidad</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ImpSaldoAnt">
+          <DataField>ImpSaldoAnt</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="UUIDrelacionado">
+          <DataField>UUIDrelacionado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ImpPagado">
+          <DataField>ImpPagado</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ImpSaldoInsoluto">
+          <DataField>ImpSaldoInsoluto</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="isocurrc">
+          <DataField>isocurrc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="codigoPostal">
+          <DataField>codigoPostal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ITEMDESC">
+          <DataField>ITEMDESC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="usoCfdi">
+          <DataField>usoCfdi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="rgfs_descripcion">
+          <DataField>rgfs_descripcion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="uscf_descripcion">
+          <DataField>uscf_descripcion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ORUNTPRC">
+          <DataField>ORUNTPRC</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="XTNDPRCE">
+          <DataField>XTNDPRCE</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="docid">
+          <DataField>docid</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="frpg_P_descripcion">
+          <DataField>frpg_P_descripcion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fechaHoraEmision">
+          <DataField>fechaHoraEmision</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="regimenFiscal">
+          <DataField>regimenFiscal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="total">
+          <DataField>total</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="folioFiscal">
+          <DataField>folioFiscal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="noCertificadoCSD">
+          <DataField>noCertificadoCSD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="version">
+          <DataField>version</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="selloCFD">
+          <DataField>selloCFD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="selloSAT">
+          <DataField>selloSAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cadenaOriginalSAT">
+          <DataField>cadenaOriginalSAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="noCertificadoSAT">
+          <DataField>noCertificadoSAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="APTODCNM">
+          <DataField>APTODCNM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaTimbrado">
+          <DataField>FechaTimbrado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="mtdpg_DR_descripcion">
+          <DataField>mtdpg_DR_descripcion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="rutaYNomArchivo">
+          <DataField>rutaYNomArchivo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TXRGNNUMCUST">
+          <DataField>TXRGNNUMCUST</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="USERDEF2">
+          <DataField>USERDEF2</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="FORMADEPAGOCONCATENADO">
+          <DataField>FORMADEPAGOCONCATENADO</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="metodoDePago">
+          <DataField>metodoDePago</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="mtdpg_descripcion">
+          <DataField>mtdpg_descripcion</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="codigoBarras">
+          <DataField>codigoBarras</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="TipoDeComprobante">
+          <DataField>TipoDeComprobante</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="tdcmp_descripcion">
+          <DataField>tdcmp_descripcion</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix3">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>5.88808cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.22823cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.28364cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.83053cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>3.97195cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.69026cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.61904cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.70624cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.69633cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.15021cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox224">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox224</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox7">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox7</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox240">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox240</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox246">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox246</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox252">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox252</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox258">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox258</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.71839cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox38">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Documento Relacionado</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox38</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Moneda</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox5">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>TC</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox5</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox8">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Método Pago</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox8</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox59">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Parcialidad</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox59</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox61">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Saldo Ant.</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox61</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox63">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Monto Pago</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox63</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox65">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Saldo Insoluto</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox65</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.36187cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="IdDocumento">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!IdDocumento.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>IdDocumento</rd:DefaultName>
+                          <Style>
+                            <Border />
+                            <PaddingLeft>2pt</PaddingLeft>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="APTODCNM">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!APTODCNM.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>APTODCNM</rd:DefaultName>
+                          <Style>
+                            <Border />
+                            <PaddingLeft>2pt</PaddingLeft>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="MonedaDR">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!MonedaDR.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>MonedaDR</rd:DefaultName>
+                          <Style>
+                            <Border />
+                            <PaddingLeft>2pt</PaddingLeft>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TipoCambioDR">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!TipoCambioDR.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <Format>#,0.0000;(#,0.0000)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>TipoCambioDR</rd:DefaultName>
+                          <Style>
+                            <Border />
+                            <PaddingLeft>2pt</PaddingLeft>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="MetodoDePagoDR">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!MetodoDePagoDR.Value + " " + Fields!mtdpg_DR_descripcion.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>MetodoDePagoDR</rd:DefaultName>
+                          <Style>
+                            <Border />
+                            <PaddingLeft>2pt</PaddingLeft>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="NumParcialidad">
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!NumParcialidad.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>NumParcialidad</rd:DefaultName>
+                          <Style>
+                            <Border />
+                            <PaddingLeft>2pt</PaddingLeft>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ImpSaldoAnt">
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ImpSaldoAnt.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ImpSaldoAnt</rd:DefaultName>
+                          <Style>
+                            <Border />
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ImpPagado">
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ImpPagado.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ImpPagado</rd:DefaultName>
+                          <Style>
+                            <Border />
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ImpSaldoInsoluto">
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ImpSaldoInsoluto.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>7pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ImpSaldoInsoluto</rd:DefaultName>
+                          <Style>
+                            <Border />
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>true</Hidden>
+                  </Visibility>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Details1" />
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <RepeatColumnHeaders>true</RepeatColumnHeaders>
+            <DataSetName>SOPINVOICE</DataSetName>
+            <Top>0.2cm</Top>
+            <Left>0.5675cm</Left>
+            <Height>1.23047cm</Height>
+            <Width>18.9143cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>1.52715cm</Height>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>20.18849cm</Width>
+      <Page>
+        <PageHeader>
+          <Height>9.57147cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Image Name="LogoMacLean">
+              <Source>Embedded</Source>
+              <Value>LogoMaclean</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.13928cm</Top>
+              <Left>1.96367cm</Left>
+              <Height>2.55942cm</Height>
+              <Width>4.46026cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Textbox Name="Textbox122">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Fecha:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox122</rd:DefaultName>
+              <Top>1.90182cm</Top>
+              <Left>12.74814cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.4cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox123">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>= "Pago:"</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox123</rd:DefaultName>
+              <Top>2.30182cm</Top>
+              <Left>12.74814cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.92389cm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox128">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Moneda:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox128</rd:DefaultName>
+              <Top>3.10182cm</Top>
+              <Left>12.74814cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.5cm</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox129">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Lugar de Expedición:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox129</rd:DefaultName>
+              <Top>3.90182cm</Top>
+              <Left>12.74814cm</Left>
+              <Height>0.4cm</Height>
+              <Width>3.293cm</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox130">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!fechaHoraEmision.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox130</rd:DefaultName>
+              <Top>1.90182cm</Top>
+              <Left>16.13064cm</Left>
+              <Height>0.4cm</Height>
+              <Width>3.6cm</Width>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox131">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>= First(Fields!SOPNUMBE.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox131</rd:DefaultName>
+              <Top>2.30182cm</Top>
+              <Left>16.13064cm</Left>
+              <Height>0.4cm</Height>
+              <Width>3.6cm</Width>
+              <ZIndex>6</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox135">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!isocurrc.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox135</rd:DefaultName>
+              <Top>3.10182cm</Top>
+              <Left>16.13064cm</Left>
+              <Height>0.4cm</Height>
+              <Width>3.62cm</Width>
+              <ZIndex>7</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Line Name="Line7">
+              <Top>4.78896cm</Top>
+              <Left>0.05143cm</Left>
+              <Height>0cm</Height>
+              <Width>19.86555cm</Width>
+              <ZIndex>8</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Textbox Name="Textbox136">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>MACLEAN ENGINEERING MEXICANA S.A. DE C.V.</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Autopista Mexico-Queretaro, Carretera Federal No.57 km 194+813 </Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Bodega D Módulo 7, El Colorado
+El Marqués, Querétaro C.P.76246, México</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>RFC: </Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>MEM-111214-9PA</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox124</rd:DefaultName>
+              <Top>2.748cm</Top>
+              <Left>0.47142cm</Left>
+              <Height>1.51821cm</Height>
+              <Width>7.98217cm</Width>
+              <ZIndex>9</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox146">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Receptor:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>4.87574cm</Top>
+              <Left>0.4445cm</Left>
+              <Height>0.45297cm</Height>
+              <Width>8.00333cm</Width>
+              <ZIndex>10</ZIndex>
+              <Style>
+                <Border />
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox152">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">RFC:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>5.91921cm</Top>
+              <Left>0.4445cm</Left>
+              <Height>0.4cm</Height>
+              <Width>0.73107cm</Width>
+              <ZIndex>11</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Textbox>
+            <Line Name="Line11">
+              <Top>8.47922cm</Top>
+              <Left>9.77801cm</Left>
+              <Height>-3.69019cm</Height>
+              <Width>0cm</Width>
+              <ZIndex>12</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Line Name="Line15">
+              <Top>5.45042cm</Top>
+              <Left>0.05143cm</Left>
+              <Height>0cm</Height>
+              <Width>19.77929cm</Width>
+              <ZIndex>13</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Textbox Name="Textbox156">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!TXRGNNUMCUST.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>5.919cm</Top>
+              <Left>2.24564cm</Left>
+              <Height>0.4cm</Height>
+              <Width>7.11704cm</Width>
+              <ZIndex>14</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Textbox>
+            <Image Name="Q">
+              <Source>External</Source>
+              <Value>=First(Fields!rutaYNomArchivo.Value, "SOPINVOICE")</Value>
+              <MIMEType>image/jpeg</MIMEType>
+              <Sizing>FitProportional</Sizing>
+              <Top>1.76953cm</Top>
+              <Left>9.04392cm</Left>
+              <Height>2.75cm</Height>
+              <Width>2.75cm</Width>
+              <ZIndex>15</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Textbox Name="Textbox158">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!regimenFiscal.Value, "SOPINVOICE")+" "+First(Fields!rgfs_descripcion.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>4.27327cm</Top>
+              <Left>0.47142cm</Left>
+              <Height>0.3cm</Height>
+              <Width>7.94188cm</Width>
+              <ZIndex>16</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox165">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Razón Social:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>5.51921cm</Top>
+              <Left>0.4445cm</Left>
+              <Height>0.4cm</Height>
+              <Width>1.75915cm</Width>
+              <ZIndex>17</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Textbox>
+            <Textbox Name="CUSTNAME1">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!CUSTNAME.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>CUSTNAME1</rd:DefaultName>
+              <Top>5.519cm</Top>
+              <Left>2.24564cm</Left>
+              <Height>0.4cm</Height>
+              <Width>7.46181cm</Width>
+              <ZIndex>18</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox137">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!TipoDeComprobante.Value, "SOPINVOICE")+" "+First(Fields!tdcmp_descripcion.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox131</rd:DefaultName>
+              <Top>2.70182cm</Top>
+              <Left>16.13064cm</Left>
+              <Height>0.4cm</Height>
+              <Width>3.6cm</Width>
+              <ZIndex>19</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox127">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Tipo de Comprobante:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox124</rd:DefaultName>
+              <Top>2.70182cm</Top>
+              <Left>12.74814cm</Left>
+              <Height>0.4cm</Height>
+              <Width>3.293cm</Width>
+              <ZIndex>20</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox138">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!codigoPostal.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox135</rd:DefaultName>
+              <Top>3.90182cm</Top>
+              <Left>16.13064cm</Left>
+              <Height>0.4cm</Height>
+              <Width>3.62cm</Width>
+              <ZIndex>21</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox166">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Uso CFDI:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>6.31921cm</Top>
+              <Left>0.4445cm</Left>
+              <Height>0.4cm</Height>
+              <Width>1.17707cm</Width>
+              <ZIndex>22</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Textbox>
+            <Textbox Name="USRTAB2">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!usoCfdi.Value, "SOPINVOICE") + " " + First(Fields!uscf_descripcion.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USRTAB01</rd:DefaultName>
+              <Top>6.319cm</Top>
+              <Left>2.24564cm</Left>
+              <Height>0.4cm</Height>
+              <Width>4.47102cm</Width>
+              <ZIndex>23</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox139">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!TipoCambioP.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <Format>#,0.0000;(#,0.0000)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox135</rd:DefaultName>
+              <Top>3.50182cm</Top>
+              <Left>16.13064cm</Left>
+              <Height>0.4cm</Height>
+              <Width>3.62cm</Width>
+              <ZIndex>24</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox132">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Tipo de Cambio:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox128</rd:DefaultName>
+              <Top>3.50182cm</Top>
+              <Left>12.74814cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.5cm</Width>
+              <ZIndex>25</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="USERDEF21">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!FormaDePagoP.Value, "SOPINVOICE") + " "+First(Fields!frpg_P_descripcion.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USERDEF21</rd:DefaultName>
+              <Top>5.5582cm</Top>
+              <Left>12.40564cm</Left>
+              <Height>0.4cm</Height>
+              <Width>4.47102cm</Width>
+              <ZIndex>26</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox164">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Forma de Pago:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>5.5582cm</Top>
+              <Left>10.0814cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.18693cm</Width>
+              <ZIndex>27</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Textbox>
+            <Textbox Name="USERDEF22">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!NumOperacion.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USERDEF21</rd:DefaultName>
+              <Top>5.9582cm</Top>
+              <Left>12.40564cm</Left>
+              <Height>0.4cm</Height>
+              <Width>4.47102cm</Width>
+              <ZIndex>28</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox167">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Núm. Operación:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>5.9582cm</Top>
+              <Left>10.0814cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.18693cm</Width>
+              <ZIndex>29</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox168">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>RFC Emisor Cta. Ord.:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>6.3582cm</Top>
+              <Left>10.0814cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.18693cm</Width>
+              <ZIndex>30</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Textbox>
+            <Textbox Name="USERDEF23">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!RfcEmisorCtaOrd.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USERDEF21</rd:DefaultName>
+              <Top>6.3582cm</Top>
+              <Left>12.40564cm</Left>
+              <Height>0.4cm</Height>
+              <Width>4.47102cm</Width>
+              <ZIndex>31</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox169">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Banco Ord. Ext.:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>6.7582cm</Top>
+              <Left>10.0814cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.18693cm</Width>
+              <ZIndex>32</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Textbox>
+            <Textbox Name="USERDEF24">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!NomBancoOrdExt.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USERDEF21</rd:DefaultName>
+              <Top>6.7582cm</Top>
+              <Left>12.40564cm</Left>
+              <Height>0.4cm</Height>
+              <Width>4.47102cm</Width>
+              <ZIndex>33</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox170">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Cta. Ordenante:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>7.1582cm</Top>
+              <Left>10.0814cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.18693cm</Width>
+              <ZIndex>34</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Textbox>
+            <Textbox Name="USERDEF25">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!CtaOrdenante.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USERDEF21</rd:DefaultName>
+              <Top>7.1582cm</Top>
+              <Left>12.40564cm</Left>
+              <Height>0.4cm</Height>
+              <Width>4.47102cm</Width>
+              <ZIndex>35</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox171">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>RFC Emisor Cta. Ben.:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>7.5582cm</Top>
+              <Left>10.0814cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.18693cm</Width>
+              <ZIndex>36</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Textbox>
+            <Textbox Name="USERDEF26">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!RfcEmisorCtaBen.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USERDEF21</rd:DefaultName>
+              <Top>7.5582cm</Top>
+              <Left>12.40564cm</Left>
+              <Height>0.4cm</Height>
+              <Width>4.47102cm</Width>
+              <ZIndex>37</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox172">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Cta. Beneficiaro:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>7.9582cm</Top>
+              <Left>10.0814cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.18693cm</Width>
+              <ZIndex>38</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Textbox>
+            <Textbox Name="USERDEF27">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!CtaBeneficiario.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USERDEF21</rd:DefaultName>
+              <Top>7.9582cm</Top>
+              <Left>12.40564cm</Left>
+              <Height>0.4cm</Height>
+              <Width>4.47102cm</Width>
+              <ZIndex>39</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="USERDEF28">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!cantidad.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USERDEF21</rd:DefaultName>
+              <Top>8.93619cm</Top>
+              <Left>3.70502cm</Left>
+              <Height>0.45889cm</Height>
+              <Width>2.26023cm</Width>
+              <ZIndex>40</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="USERDEF29">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!ITEMDESC.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USERDEF21</rd:DefaultName>
+              <Top>8.93619cm</Top>
+              <Left>5.96525cm</Left>
+              <Height>0.45889cm</Height>
+              <Width>8.10774cm</Width>
+              <ZIndex>41</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="USERDEF30">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!ClaveUnidad.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USERDEF21</rd:DefaultName>
+              <Top>8.93619cm</Top>
+              <Left>14.07299cm</Left>
+              <Height>0.45889cm</Height>
+              <Width>2.23874cm</Width>
+              <ZIndex>42</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="USERDEF31">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!ORUNTPRC.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <Format>#,0.00;(#,0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USERDEF21</rd:DefaultName>
+              <Top>8.93619cm</Top>
+              <Left>16.31173cm</Left>
+              <Height>0.45889cm</Height>
+              <Width>1.70624cm</Width>
+              <ZIndex>43</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="USERDEF32">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!XTNDPRCE.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <Format>#,0.00;(#,0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USERDEF21</rd:DefaultName>
+              <Top>8.93619cm</Top>
+              <Left>18.01798cm</Left>
+              <Height>0.45889cm</Height>
+              <Width>1.69633cm</Width>
+              <ZIndex>44</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="USERDEF33">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!ClaveProdServ.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>USERDEF21</rd:DefaultName>
+              <Top>8.93619cm</Top>
+              <Left>0.66275cm</Left>
+              <Height>0.45889cm</Height>
+              <Width>3.04227cm</Width>
+              <ZIndex>45</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox173">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Código</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>8.53619cm</Top>
+              <Left>0.66275cm</Left>
+              <Height>0.4cm</Height>
+              <Width>3.04227cm</Width>
+              <ZIndex>46</ZIndex>
+              <Style>
+                <Border />
+                <BackgroundColor>LightGrey</BackgroundColor>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox174">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Cantidad</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>8.53619cm</Top>
+              <Left>3.70502cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.26023cm</Width>
+              <ZIndex>47</ZIndex>
+              <Style>
+                <Border />
+                <BackgroundColor>LightGrey</BackgroundColor>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox175">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Descripción</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <ListLevel>1</ListLevel>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>8.53619cm</Top>
+              <Left>5.96525cm</Left>
+              <Height>0.4cm</Height>
+              <Width>8.10774cm</Width>
+              <ZIndex>48</ZIndex>
+              <Style>
+                <Border />
+                <BackgroundColor>LightGrey</BackgroundColor>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox176">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Unidad de Medida</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>8.53619cm</Top>
+              <Left>14.07299cm</Left>
+              <Height>0.4cm</Height>
+              <Width>2.23874cm</Width>
+              <ZIndex>49</ZIndex>
+              <Style>
+                <Border />
+                <BackgroundColor>LightGrey</BackgroundColor>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox177">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Precio</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>8.53619cm</Top>
+              <Left>16.31173cm</Left>
+              <Height>0.4cm</Height>
+              <Width>1.70624cm</Width>
+              <ZIndex>50</ZIndex>
+              <Style>
+                <Border />
+                <BackgroundColor>LightGrey</BackgroundColor>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox178">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Importe</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox142</rd:DefaultName>
+              <Top>8.53619cm</Top>
+              <Left>18.01798cm</Left>
+              <Height>0.4cm</Height>
+              <Width>1.69633cm</Width>
+              <ZIndex>51</ZIndex>
+              <Style>
+                <Border />
+                <BackgroundColor>LightGrey</BackgroundColor>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageFooter>
+          <Height>12.9191cm</Height>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox24">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!total.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>#,0.00;(#,0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>0.07971cm</Top>
+              <Left>15.59664cm</Left>
+              <Height>0.42cm</Height>
+              <Width>2.54cm</Width>
+              <Visibility>
+                <Hidden>=IIF(Globals!TotalPages &gt; 1 and Globals!PageNumber = 1, true, false)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <BottomBorder>
+                  <Color>Black</Color>
+                  <Width>1pt</Width>
+                </BottomBorder>
+                <LeftBorder>
+                  <Color>Black</Color>
+                  <Width>1pt</Width>
+                </LeftBorder>
+                <RightBorder>
+                  <Color>Black</Color>
+                  <Width>1pt</Width>
+                </RightBorder>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox25">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!AMOUNT_LETTERS.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <Color>=IIF(Globals!TotalPages &gt; 1 and Globals!PageNumber = 1, "WHITE", "BLACK")</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>0.65779cm</Top>
+              <Left>0.5001cm</Left>
+              <Height>0.33542cm</Height>
+              <Width>14.3931cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox28">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">TOTAL</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>0.07971cm</Top>
+              <Left>13.10978cm</Left>
+              <Height>0.42cm</Height>
+              <Width>2.5cm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <TopBorder>
+                  <Style>None</Style>
+                </TopBorder>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox29">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">IMPORTE TOTAL CON LETRA:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <Color>=IIF(Globals!TotalPages &gt; 1 and Globals!PageNumber = 1, "WHITE", "BLACK")</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>0.254cm</Top>
+              <Left>0.5001cm</Left>
+              <Height>0.33542cm</Height>
+              <Width>3.82092cm</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox37">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">ESTE DOCUMENTO ES UNA REPRESENTACIÓN IMPRESA DE UN CFDI</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>4.75929cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.33542cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox46">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!cadenaOriginalSAT.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>5.28801cm</Top>
+              <Left>10.0814cm</Left>
+              <Height>3.6467cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox45">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">Cadena Original del Complemento de Certificación Digital del SAT:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>4.93685cm</Top>
+              <Left>10.0814cm</Left>
+              <Height>0.33277cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>6</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Line Name="Line6">
+              <Top>9.59191cm</Top>
+              <Left>9.95903cm</Left>
+              <Height>-4.90819cm</Height>
+              <Width>0cm</Width>
+              <ZIndex>7</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Textbox Name="Textbox41">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">Folio Fiscal:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>5.09471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>8</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox42">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!folioFiscal.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>5.41471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>9</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox43">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">Factura Serie / Nro. Interno:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>5.73471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>10</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox44">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!docid.Value, "SOPINVOICE") &amp; " / " &amp; First(Fields!SOPNUMBE.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>6.05471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>11</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox47">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">Fecha y Hora de Emisión:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>6.37471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>12</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox48">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!fechaHoraEmision.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>6.69471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>13</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox49">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">Fecha y Hora de Certificación:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>7.01471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>14</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox50">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!FechaTimbrado.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>7.33471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>15</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox51">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">Nro. Certificado:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>7.65471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>16</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox54">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!noCertificadoCSD.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>7.97471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>17</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox55">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">Nro. Certificado SAT:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>8.29471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>18</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox56">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!noCertificadoSAT.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>8.61471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>19</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox33">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Sello Digital del CFDI:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>2.26487cm</Top>
+              <Left>0.5001cm</Left>
+              <Height>0.33542cm</Height>
+              <Width>2.8175cm</Width>
+              <ZIndex>20</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox34">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!selloCFD.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>2.60029cm</Top>
+              <Left>0.5001cm</Left>
+              <Height>0.62646cm</Height>
+              <Width>19.21421cm</Width>
+              <ZIndex>21</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Top</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox35">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">Sello del SAT:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>3.51519cm</Top>
+              <Left>0.5001cm</Left>
+              <Height>0.33542cm</Height>
+              <Width>2.8175cm</Width>
+              <ZIndex>22</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox36">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!selloSAT.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>3.85061cm</Top>
+              <Left>0.5001cm</Left>
+              <Height>0.62646cm</Height>
+              <Width>19.23054cm</Width>
+              <ZIndex>23</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Top</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Line Name="Line1">
+              <Top>2.23142cm</Top>
+              <Left>19.86554cm</Left>
+              <Height>0cm</Height>
+              <Width>-19.84139cm</Width>
+              <ZIndex>24</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Line Name="Line2">
+              <Top>3.42591cm</Top>
+              <Left>19.86555cm</Left>
+              <Height>0cm</Height>
+              <Width>-19.86555cm</Width>
+              <ZIndex>25</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Line Name="Line3">
+              <Top>4.69591cm</Top>
+              <Left>19.86555cm</Left>
+              <Height>0cm</Height>
+              <Width>-19.81412cm</Width>
+              <ZIndex>26</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Textbox Name="Textbox57">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>RFC del PAC</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>8.93471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>27</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox58">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!RfcPAC.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>9.25471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>9.27689cm</Width>
+              <ZIndex>28</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox60">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Leyenda</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>9.57471cm</Top>
+              <Left>0.52109cm</Left>
+              <Height>0.32cm</Height>
+              <Width>1.36585cm</Width>
+              <ZIndex>29</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox62">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!Leyenda.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>9.57471cm</Top>
+              <Left>1.96367cm</Left>
+              <Height>0.32cm</Height>
+              <Width>17.44429cm</Width>
+              <ZIndex>30</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox39">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>CFDI Relacionado:</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>1.26559cm</Top>
+              <Left>0.5001cm</Left>
+              <Height>0.33542cm</Height>
+              <Width>2.8175cm</Width>
+              <ZIndex>31</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Line Name="Line4">
+              <Top>1.22838cm</Top>
+              <Left>19.89722cm</Left>
+              <Height>0cm</Height>
+              <Width>-19.84139cm</Width>
+              <ZIndex>32</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Textbox Name="Textbox40">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!TipoRelacion.Value, "SOPINVOICE")+ " " +First(Fields!tprl_descripcion.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>1.67156cm</Top>
+              <Left>0.5001cm</Left>
+              <Height>0.33542cm</Height>
+              <Width>4.88483cm</Width>
+              <ZIndex>33</ZIndex>
+              <Visibility>
+                <Hidden>=IIF(Globals!TotalPages &gt; 1 and Globals!PageNumber = 1, true, false)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox52">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="UUID: " + First(Fields!UUIDrelacionado.Value, "SOPINVOICE")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox22</rd:DefaultName>
+              <Top>1.67156cm</Top>
+              <Left>5.61689cm</Left>
+              <Height>0.33542cm</Height>
+              <Width>5.54629cm</Width>
+              <ZIndex>34</ZIndex>
+              <Visibility>
+                <Hidden>=IIF(Globals!TotalPages &gt; 1 and Globals!PageNumber = 1, true, false)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>0cm</LeftMargin>
+        <RightMargin>0cm</RightMargin>
+        <TopMargin>0cm</TopMargin>
+        <BottomMargin>0cm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="SOPNUMBE">
+      <DataType>String</DataType>
+      <Prompt>SOPNUMBE</Prompt>
+      <cl:ComponentMetadata>
+        <cl:ComponentId>02e0ec11-ce29-4e7c-8eab-20124fd1be21</cl:ComponentId>
+      </cl:ComponentMetadata>
+    </ReportParameter>
+    <ReportParameter Name="SOPTYPE">
+      <DataType>Integer</DataType>
+      <Prompt>SOPTYPE</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function ConvertTotWebUrl ( byVal FilePathOfImage as String) as String
+
+RETURN REPLACE(REPLACE(FilePathOfImage, "D:\Dynshare\fePRUEBAS\cbb\", "http://memco-ts02/Reportserver_MEMCOSQL/"), "\","/")
+
+End Function
+
+Public resultadotransporte  As double
+Public numerodepagina  As double
+Public docanterior  As string
+Public docnuevo  As string
+Public docanterior2  As string
+Public docnuevo2  As string
+Public docanterior3  As string
+Public docnuevo3  As string
+Public coeficiente  As double
+
+Public variableguardada  as double
+
+
+Shared offset as Integer
+Shared currentgroup as Object
+
+
+Public Function GetGroupPageNumber(group as Object, pagenumber as Integer) as Object
+  If Not (group = currentgroup)
+    offset = pagenumber - 1
+    currentgroup = group
+  End If
+  Return pagenumber - offset
+End Function
+
+
+
+Public Function GuardarVariable(ByVal  valor as string)
+  
+   variableguardada  =  valor
+end function
+
+
+Public Function ChequearCambioDoc(ByVal  docu as string)
+      
+      docnuevo2  = docu   
+     
+     'si cambia el documento, reseteamos
+      if docnuevo2  &lt;&gt; docanterior2 then
+                coeficiente  = 0          
+               else
+               coeficiente  = 1
+      end if
+
+       docanterior2 = docnuevo2
+
+End Function
+
+
+Public Function acumulartransporte(ByVal Value As double,ByVal  docu as string)
+     
+      docnuevo =   docu 
+  
+     'si cambia el documento, reseteamos
+      if docnuevo  &lt;&gt; docanterior then
+                resultadotransporte = 0    
+                else
+                resultadotransporte= resultadotransporte+ Value
+
+      end if
+
+    'lo ponemos para que tome el extended price
+     if  resultadotransporte= 0   then 
+             resultadotransporte= Value
+    end if
+
+       
+       docanterior = docnuevo
+
+End Function
+
+
+
+
+
+
+Public Function acumularpagina(ByVal  docu as string)
+     
+      docnuevo3 =   docu 
+  
+     'si cambia el documento, reseteamos
+      if docnuevo3  &lt;&gt; docanterior3 then
+                numerodepagina   =1
+                else
+                numerodepagina =   numerodepagina   + 1
+
+      end if
+
+      
+       docanterior3 = docnuevo3
+
+End Function
+
+</Code>
+  <EmbeddedImages>
+    <EmbeddedImage Name="LogoMaclean">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>39bc4504-d67f-4c0a-9b0c-f04d3f024e80</rd:ReportID>
+</Report>

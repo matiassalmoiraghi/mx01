@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>GPZMMEX</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@SOPNUMBE">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@SOPTYPE">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT * 
+FROM dbo.[vwCfdiTrasladoParaReporte]
+WHERE SOPNUMBE = @SOPNUMBE AND SOPTYPE = @SOPTYPE</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="estadoContabilizado">
+        <DataField>estadoContabilizado</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="soptype">
+        <DataField>soptype</DataField>
+        <rd:TypeName>System.Int16</rd:TypeName>
+      </Field>
+      <Field Name="docid">
+        <DataField>docid</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="doctype">
+        <DataField>doctype</DataField>
+        <rd:TypeName>System.Int16</rd:TypeName>
+      </Field>
+      <Field Name="sopnumbe">
+        <DataField>sopnumbe</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="fechaHora">
+        <DataField>fechaHora</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="TXRGNNUMCUST">
+        <DataField>TXRGNNUMCUST</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="isocurrc">
+        <DataField>isocurrc</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TipoDeComprobante">
+        <DataField>TipoDeComprobante</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="tdcmp_descripcion">
+        <DataField>tdcmp_descripcion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="codigoPostal">
+        <DataField>codigoPostal</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="regimenFiscal">
+        <DataField>regimenFiscal</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="rgfs_descripcion">
+        <DataField>rgfs_descripcion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="usoCfdi">
+        <DataField>usoCfdi</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="uscf_descripcion">
+        <DataField>uscf_descripcion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="orden">
+        <DataField>orden</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="ITEMNMBR">
+        <DataField>ITEMNMBR</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ClaveProdServ">
+        <DataField>ClaveProdServ</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ITEMDESC">
+        <DataField>ITEMDESC</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="UOFM">
+        <DataField>UOFM</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="UOFMsat_descripcion">
+        <DataField>UOFMsat_descripcion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ORUNTPRC">
+        <DataField>ORUNTPRC</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="OXTNDPRC">
+        <DataField>OXTNDPRC</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="QUANTITY">
+        <DataField>QUANTITY</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="UUIDrelacionado">
+        <DataField>UUIDrelacionado</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SERLTQTY">
+        <DataField>SERLTQTY</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SERLTNUM">
+        <DataField>SERLTNUM</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LOTATRB1">
+        <DataField>LOTATRB1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LOTATRB2">
+        <DataField>LOTATRB2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LOTATRB3">
+        <DataField>LOTATRB3</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LOTATRB4">
+        <DataField>LOTATRB4</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="LOTATRB5">
+        <DataField>LOTATRB5</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="fechaHoraEmision">
+        <DataField>fechaHoraEmision</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="rfcReceptor">
+        <DataField>rfcReceptor</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="nombreCliente">
+        <DataField>nombreCliente</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="total">
+        <DataField>total</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="folioFiscal">
+        <DataField>folioFiscal</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="noCertificadoCSD">
+        <DataField>noCertificadoCSD</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="version">
+        <DataField>version</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="selloCFD">
+        <DataField>selloCFD</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="selloSAT">
+        <DataField>selloSAT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="cadenaOriginalSAT">
+        <DataField>cadenaOriginalSAT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="noCertificadoSAT">
+        <DataField>noCertificadoSAT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="RfcPAC">
+        <DataField>RfcPAC</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Leyenda">
+        <DataField>Leyenda</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="FechaTimbrado">
+        <DataField>FechaTimbrado</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="rutaYNomArchivo">
+        <DataField>rutaYNomArchivo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="rutaYNomArchivoNet">
+        <DataField>rutaYNomArchivoNet</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

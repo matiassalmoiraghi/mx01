@@ -3,6 +3,9 @@
      xmlns:util="http://schemas.microsoft.com/wix/UtilExtension"
      xmlns:sql="http://schemas.microsoft.com/wix/SqlExtension">
 
+  <!-- Define los directorios donde estan almacenados los archivos SQL.-->
+  <?include "VariablesGlobalesSqlSetup.wxi"?>
+
   <Product Id="0B05B2FB-CA8F-46A3-8370-2B62E5895FF8"
            Name="GP Factura Digital Sql Setup"
            Language="1033"
@@ -116,75 +119,75 @@
 
     </Feature>
 
-    <Binary Id="Createview01" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\001_DynObtieneBdsQueEmitenFElectronica.view.sql"/>
-    <Binary Id="Grants02" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\002_DynDaPermisosFacturaElectronica.grant.sql"/>
+    <Binary Id="Createview01" SourceFile="$(var.SqlDir)\001_DynObtieneBdsQueEmitenFElectronica.view.sql"/>
+    <Binary Id="Grants02" SourceFile="$(var.SqlDir)\002_DynDaPermisosFacturaElectronica.grant.sql"/>
 
-    <Binary Id="CreateBaseView02" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\000_10_rmvwRmTransaccionesTodas.view.sql"/>
-    <Binary Id="CreateBaseView04" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\000_15_rmVwTrxAplicadas.view.sql"/>
-    <Binary Id="CreateBaseView06" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\000_20_rmVwRmTrxAplicadasExtendidas.view.sql"/>
-    <Binary Id="CreateBaseView08" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\000_25_ivVwIvTransaccionesTH.view.sql"/>
-    <Binary Id="CreateBaseView10" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\000_30_SplitStrings.function.sql"/>
+    <Binary Id="CreateBaseView02" SourceFile="$(var.SqlDir)\000_10_rmvwRmTransaccionesTodas.view.sql"/>
+    <Binary Id="CreateBaseView04" SourceFile="$(var.SqlDir)\000_15_rmVwTrxAplicadas.view.sql"/>
+    <Binary Id="CreateBaseView06" SourceFile="$(var.SqlDir)\000_20_rmVwRmTrxAplicadasExtendidas.view.sql"/>
+    <Binary Id="CreateBaseView08" SourceFile="$(var.SqlDir)\000_25_ivVwIvTransaccionesTH.view.sql"/>
+    <Binary Id="CreateBaseView10" SourceFile="$(var.SqlDir)\000_30_SplitStrings.function.sql"/>
 
-    <Binary Id="CreateFun03" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\003_fcfdiParametros.function.sql"/>
-    <Binary Id="CreateObj03" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\003_fcfdiParametrosCliente.function.sql"/>
-    <Binary Id="CreateObj04" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\004_fCfdiComercioExteriorParametrosPais.function.sql"/>
-    <Binary Id="CreateObj10" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\010_cfdiCatalogo.table.sql"/>
-    <Binary Id="Createview10" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\010_vwCfdiRmTrxAplicadas.view.sql"/>
-    <Binary Id="Createfun12" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\012_fCfdObtieneImagenC.function.sql"/>
-    <Binary Id="CreateObj14" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\014_fCfdiFormaPago.function.sql"/>
-    <Binary Id="CreateObj15" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\015_fCfdiPagoSimultaneoMayor.function.sql"/>
-    <Binary Id="CreateObj18" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\018_vwfCfdiPagosSimultaneos.view.sql"/>
-    <Binary Id="Createtrig35" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\035_RegistraHoradeFacturaElectronica.trigger.sql"/>
+    <Binary Id="CreateFun03" SourceFile="$(var.SqlDir)\003_fcfdiParametros.function.sql"/>
+    <Binary Id="CreateObj03" SourceFile="$(var.SqlDir)\003_fcfdiParametrosCliente.function.sql"/>
+    <Binary Id="CreateObj04" SourceFile="$(var.SqlDir)\004_fCfdiComercioExteriorParametrosPais.function.sql"/>
+    <Binary Id="CreateObj10" SourceFile="$(var.SqlDir)\010_cfdiCatalogo.table.sql"/>
+    <Binary Id="Createview10" SourceFile="$(var.SqlDir)\010_vwCfdiRmTrxAplicadas.view.sql"/>
+    <Binary Id="Createfun12" SourceFile="$(var.SqlDir)\012_fCfdObtieneImagenC.function.sql"/>
+    <Binary Id="CreateObj14" SourceFile="$(var.SqlDir)\014_fCfdiFormaPago.function.sql"/>
+    <Binary Id="CreateObj15" SourceFile="$(var.SqlDir)\015_fCfdiPagoSimultaneoMayor.function.sql"/>
+    <Binary Id="CreateObj18" SourceFile="$(var.SqlDir)\018_vwfCfdiPagosSimultaneos.view.sql"/>
+    <Binary Id="Createtrig35" SourceFile="$(var.SqlDir)\035_RegistraHoradeFacturaElectronica.trigger.sql"/>
 
     <!--Atención: Varía de acuerdo a la VERSION GP-->
     <!--<Binary Id="Createview40" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\040_ObtieneConfiguracionCartasEmail.viewgp2013oAnt.sql"/>-->
-    <Binary Id="Createview40" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\040_ObtieneConfiguracionCartasEmail.viewGP2015.sql"/>
+    <Binary Id="Createview40" SourceFile="$(var.SqlDir)\040_ObtieneConfiguracionCartasEmail.viewGP2015.sql"/>
     
-    <Binary Id="Createfun50" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\050_ObtieneDireccionesCorreoClientes.function.sql"/>
-    <Binary Id="Createtable55" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\055_CreaMcp.tables.sql"/>
-    <Binary Id="Createtable60" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\060_OPCIONALCreaMaestroDeCertificadosYFolios.table.sql"/>
-    <Binary Id="Createtable65" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\065_Crea_Int_sopline_data.table.sql"/>
-    <Binary Id="Createtable70" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\070_CreaLogFacturaElectronica.table.sql"/>
-    <Binary Id="Createfun72" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\072_fcfdDatosXmlParaImpresion.function.sql"/>
-    <Binary Id="CreateObj75" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\075_vwCfdiDatosDelXml.view.sql"/>
-    <Binary Id="Createsp80" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\080_ABMcfdLogFacturaXML.sprocedure.sql"/>
-    <Binary Id="Createview83" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\083_UtilesYConfiguracion.view.sql"/>
-    <Binary Id="Createview84" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\084_fCfdEmisor.function.sql"/>
-    <Binary Id="Createfunc85" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\085_fCfdDatosAdicionales.function.sql"/>
-    <Binary Id="Createfunc87" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\087_fCfdMetodoPago.function.sql"/>
-    <Binary Id="Createview90" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\090_vwCfdiSopTransacionesVenta.view.sql"/>
-    <Binary Id="CreateObj92" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\092_FCFDIoBTIENEuuid.function.sql"/>
-    <Binary Id="CreateObj93" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\093_fCfdiObtieneUuidDeSOP.function.sql"/>
-    <Binary Id="CreateObj94" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\093_fCfdiObtieneUuidDeAR.function.sql"/>
-    <Binary Id="CreateObj95" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\094_fCfdiRelacionados.functions.sql"/>
-    <Binary Id="CreateObj96" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\096_fCfdiImpuestosXML.functions.sql"/>
-    <Binary Id="Createfunc98" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\098_Addenda.function.sql"/>
-    <Binary Id="Createview100" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\100_ObtieneDocumentosXml.view.sql"/>
-    <Binary Id="Createview110" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\110_vwCfdiTransaccionesDeVenta.view.sql"/>
-    <Binary Id="Createview115" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\115_vwRmCfdiFacturasConFolioFiscal.view.sql"/>
+    <Binary Id="Createfun50" SourceFile="$(var.SqlDir)\050_ObtieneDireccionesCorreoClientes.function.sql"/>
+    <Binary Id="Createtable55" SourceFile="$(var.SqlDir)\055_CreaMcp.tables.sql"/>
+    <Binary Id="Createtable60" SourceFile="$(var.SqlDir)\060_OPCIONALCreaMaestroDeCertificadosYFolios.table.sql"/>
+    <Binary Id="Createtable65" SourceFile="$(var.SqlDir)\065_Crea_Int_sopline_data.table.sql"/>
+    <Binary Id="Createtable70" SourceFile="$(var.SqlDir)\070_CreaLogFacturaElectronica.table.sql"/>
+    <Binary Id="Createfun72" SourceFile="$(var.SqlDir)\072_fcfdDatosXmlParaImpresion.function.sql"/>
+    <Binary Id="CreateObj75" SourceFile="$(var.SqlDir)\075_vwCfdiDatosDelXml.view.sql"/>
+    <Binary Id="Createsp80" SourceFile="$(var.SqlDir)\080_ABMcfdLogFacturaXML.sprocedure.sql"/>
+    <Binary Id="Createview83" SourceFile="$(var.SqlDir)\083_UtilesYConfiguracion.view.sql"/>
+    <Binary Id="Createview84" SourceFile="$(var.SqlDir)\084_fCfdEmisor.function.sql"/>
+    <Binary Id="Createfunc85" SourceFile="$(var.SqlDir)\085_fCfdDatosAdicionales.function.sql"/>
+    <Binary Id="Createfunc87" SourceFile="$(var.SqlDir)\087_fCfdMetodoPago.function.sql"/>
+    <Binary Id="Createview90" SourceFile="$(var.SqlDir)\090_vwCfdiSopTransacionesVenta.view.sql"/>
+    <Binary Id="CreateObj92" SourceFile="$(var.SqlDir)\092_FCFDIoBTIENEuuid.function.sql"/>
+    <Binary Id="CreateObj93" SourceFile="$(var.SqlDir)\093_fCfdiObtieneUuidDeSOP.function.sql"/>
+    <Binary Id="CreateObj94" SourceFile="$(var.SqlDir)\093_fCfdiObtieneUuidDeAR.function.sql"/>
+    <Binary Id="CreateObj95" SourceFile="$(var.SqlDir)\094_fCfdiRelacionados.functions.sql"/>
+    <Binary Id="CreateObj96" SourceFile="$(var.SqlDir)\096_fCfdiImpuestosXML.functions.sql"/>
+    <Binary Id="Createfunc98" SourceFile="$(var.SqlDir)\098_Addenda.function.sql"/>
+    <Binary Id="Createview100" SourceFile="$(var.SqlDir)\100_ObtieneDocumentosXml.view.sql"/>
+    <Binary Id="Createview110" SourceFile="$(var.SqlDir)\110_vwCfdiTransaccionesDeVenta.view.sql"/>
+    <Binary Id="Createview115" SourceFile="$(var.SqlDir)\115_vwRmCfdiFacturasConFolioFiscal.view.sql"/>
     
-    <Binary Id="CreateObj117" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\117_fCfdiPagosAcumulados.function.sql"/>
-    <Binary Id="CreateObj120" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\120_vwCfdiRMFacturas.view.sql"/>
-    <Binary Id="CreateObj122" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\122_fCfdiMcpFormaPago.function.sql"/>
-    <Binary Id="CreateObj123" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\123_fCfdiDocumentoDePagoRelacionado.function.sql"/>
-    <Binary Id="CreateObj124" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\124_fCfdiDocumentoDePagoXML_Nodo_Relacionado.function.sql"/>
-    <Binary Id="CreateObj125" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\125_fCfdiDocumentoDePago.function.sql"/>
-    <Binary Id="CreateObj126" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\126_fCfdiDocumentoDePagoXMLPago.function.sql"/>
-    <Binary Id="CreateObj128" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\128_fCfdiDocumentoDePagoXMLPagos.sql"/>
-    <Binary Id="CreateObj129" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\129_fCfdiPagosRelacionados.functions.sql"/>
-    <Binary Id="CreateObj130" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\130_fCfdiDocumentoDePagoXML.function.sql"/>
-    <Binary Id="CreateObj140" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\140_vwCfdiTrxPagos.view.sql"/>
-    <Binary Id="CreateObj150" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\150_vwCfdiTrasladosInventario.view.sql"/>
-    <Binary Id="CreateObj151" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\151_vwCfdiTraslados.multiple views.sql"/>
+    <Binary Id="CreateObj117" SourceFile="$(var.SqlDir)\117_fCfdiPagosAcumulados.function.sql"/>
+    <Binary Id="CreateObj120" SourceFile="$(var.SqlDir)\120_vwCfdiRMFacturas.view.sql"/>
+    <Binary Id="CreateObj122" SourceFile="$(var.SqlDir)\122_fCfdiMcpFormaPago.function.sql"/>
+    <Binary Id="CreateObj123" SourceFile="$(var.SqlDir)\123_fCfdiDocumentoDePagoRelacionado.function.sql"/>
+    <Binary Id="CreateObj124" SourceFile="$(var.SqlDir)\124_fCfdiDocumentoDePagoXML_Nodo_Relacionado.function.sql"/>
+    <Binary Id="CreateObj125" SourceFile="$(var.SqlDir)\125_fCfdiDocumentoDePago.function.sql"/>
+    <Binary Id="CreateObj126" SourceFile="$(var.SqlDir)\126_fCfdiDocumentoDePagoXMLPago.function.sql"/>
+    <Binary Id="CreateObj128" SourceFile="$(var.SqlDir)\128_fCfdiDocumentoDePagoXMLPagos.sql"/>
+    <Binary Id="CreateObj129" SourceFile="$(var.SqlDir)\129_fCfdiPagosRelacionados.functions.sql"/>
+    <Binary Id="CreateObj130" SourceFile="$(var.SqlDir)\130_fCfdiDocumentoDePagoXML.function.sql"/>
+    <Binary Id="CreateObj140" SourceFile="$(var.SqlDir)\140_vwCfdiTrxPagos.view.sql"/>
+    <Binary Id="CreateObj150" SourceFile="$(var.SqlDir)\150_vwCfdiTrasladosInventario.view.sql"/>
+    <Binary Id="CreateObj151" SourceFile="$(var.SqlDir)\151_vwCfdiTraslados.multiple views.sql"/>
 
-    <Binary Id="Grants190" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\sql\190_DaPermisosFacturaElectronicaCia.grant.sql"/>
+    <Binary Id="Grants190" SourceFile="$(var.SqlDir)\190_DaPermisosFacturaElectronicaCia.grant.sql"/>
     
     <!--Reportes y permisos STANDARD-->
-    <Binary Id="Createfunc210" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\Rep\Sql\310_tii_invoice_amount_letters.function.igarcia120622.sql"/>
-    <Binary Id="Createview220" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\Rep\Sql\320_tii_sopinvoice.view.sql"/>
-    <Binary Id="Createview225" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\Rep\Sql\325_vwRmImprimeCobros.view.sql"/>
-    <Binary Id="Createview227" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\Rep\Sql\327_vwCfdiTrasladoParaReporte.view.sql"/>
-    <Binary Id="Grants230" SourceFile="C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\Rep\Sql\330_tii_sopinvoice.grant.sql"/>
+    <Binary Id="Createfunc210" SourceFile="$(var.RepDir)\Sql\310_tii_invoice_amount_letters.function.igarcia120622.sql"/>
+    <Binary Id="Createview220" SourceFile="$(var.RepDir)\Sql\320_tii_sopinvoice.view.sql"/>
+    <Binary Id="Createview225" SourceFile="$(var.RepDir)\Sql\325_vwRmImprimeCobros.view.sql"/>
+    <Binary Id="Createview227" SourceFile="$(var.RepDir)\Sql\327_vwCfdiTrasladoParaReporte.view.sql"/>
+    <Binary Id="Grants230" SourceFile="$(var.RepDir)\Sql\330_tii_sopinvoice.grant.sql"/>
 
     <util:User Id="SQLUser" Name="[SQLUSER]" Password="[SQLPASSWORD]"></util:User>
     <!--Variables SQL-->

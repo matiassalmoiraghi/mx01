@@ -1,0 +1,13 @@
+Notas de Compilación.
+
+Errores de Referencias
+	Proyecto Reporteador
+		Es necesario tener instalado Crystal Reports for Visual Studio 2017
+		Hay que volver a refenciar Microsoft.ReportViewer.Common y .WinForms
+			Ir a Herramientas - Administrador Paquetes Nuget - Buscar ambos e Instalar en Reporteador
+
+	Ejecutable Encriptador 
+		MyGeneration.dOOdads_2005.dll - ESta dll no esta bien referenciada. Hay que referenciarla de nuevo. 
+			Se agrega una carpeta de Adicionales donde esta la libreria para incorporarla.
+
+	

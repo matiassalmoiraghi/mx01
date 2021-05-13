@@ -423,7 +423,7 @@ begin
 				dbo.fCfdiNodoImpuestosXML(Concepto.soptype, Concepto.sopnumbe, Concepto.LNITMSEQ, 1),
 				-- dbo.fCfdiNodoImpuestosXML(Concepto.soptype, Concepto.sopnumbe, 0, 1),
 				case when upper(isnull(Concepto.param1, 'NO')) = 'SI' 
-					then Concepto.cpredial
+					then rtrim(Concepto.cpredial)
 					else null
 				end 'cfdi:CuentaPredial/@Numero'
 			from dbo.fCfdiConceptos(@p_soptype, @p_sopnumbe, @p_subtotal, @p_descuento) Concepto

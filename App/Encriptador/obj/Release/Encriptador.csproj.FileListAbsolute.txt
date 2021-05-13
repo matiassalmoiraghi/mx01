@@ -44,3 +44,16 @@ C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\Encriptador\obj\Release\En
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\Encriptador\obj\Release\Encriptador.dll
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\Encriptador\obj\Release\Encriptador.pdb
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\Encriptador\obj\Release\Encriptador.XmlSerializers.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Encriptador\bin\Release\Encriptador.dll.config
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Encriptador\bin\Release\Encriptador.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Encriptador\bin\Release\Encriptador.XmlSerializers.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Encriptador\bin\Release\Encriptador.pdb
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Encriptador\bin\Release\Comun.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Encriptador\bin\Release\Ionic.Zip.Reduced.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Encriptador\bin\Release\Comun.pdb
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Encriptador\obj\Release\Encriptador.csprojAssemblyReference.cache
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Encriptador\obj\Release\Encriptador.csproj.CoreCompileInputs.cache
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Encriptador\obj\Release\Encriptador.csproj.CopyComplete
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Encriptador\obj\Release\Encriptador.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Encriptador\obj\Release\Encriptador.pdb
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Encriptador\obj\Release\Encriptador.XmlSerializers.dll

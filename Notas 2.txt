@@ -1,0 +1,24 @@
+Transacciones - Compras 
+Entrada de Transacciones recepciones.
+			Adicionales Datos de Contabilidad
+
+DEtalle Entrada detransacciones ctas por pagar.
+			Adicionales Datos de Contabilidad
+
+Reclasificacion de impuesto por Pago. Contables por PAgo.  y Cobros
+
+
+Sierra Metals Inicio 
+
+Se reviso Localizacion Mexico en SIerra Metals.
+Se localizacion los repo
+	mx01 - Factura Electronica
+	mx02 - Dex Localizacion MExico
+	mx03 - Contabilidad Electronica
+        mx04 - Dex Localizacion Mexico - Recla.
+Se migro a GP2016.0552 mx02 y a GP2018.0628 mx02
+Se instalo en el Ambiente de Desarollo, se corrio el instalador de Tablas
+Se solicita a @MigdaliaScalona configuracion de modulos GP en nueva instalación.
+
+Pendientes Compilar mx01 y mx03. No compilan por falta de componentes.
+

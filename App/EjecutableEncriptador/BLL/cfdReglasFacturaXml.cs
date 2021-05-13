@@ -13,6 +13,7 @@ using Comun;
 using Reporteador;
 using MaquinaDeEstados;
 using BarCodeInterface;
+using System.Windows.Forms;
 //using QRCodeLib;
 
 namespace cfd.FacturaElectronica
@@ -254,22 +255,34 @@ namespace cfd.FacturaElectronica
                 string nomArchivo = Utiles.FormatoNombreArchivo(trxVenta.Docid + trxVenta.Sopnumbe + "_" + trxVenta.s_CUSTNMBR, trxVenta.s_NombreCliente, 20);
                 string rutaYNomArchivo = trxVenta.RutaXml.Trim() + nomArchivo;
 
+                //MessageBox.Show("Nombre ARchivo: " + rutaYNomArchivo);
+
                 //Guarda el archivo xml
                 comprobante.Save(new XmlTextWriter(rutaYNomArchivo + ".xml", Encoding.UTF8));
 
+                //MessageBox.Show("Save XML ");
                 //Registra log de la emisión del xml antes de imprimir el pdf, sino habrá error al imprimir
                 RegistraLogDeArchivoXML(trxVenta.Soptype, trxVenta.Sopnumbe, rutaYNomArchivo, "0", _Conexion.Usuario, comprobante.InnerXml,
                                         "emitido", mEstados.eBinarioNuevo, mEstados.EnLetras(mEstados.eBinarioNuevo));
 
+                //MessageBox.Show("Archivo LOG ");
                 RegistraLogDePagosSimultaneos(trxVenta.Soptype, trxVenta.Sopnumbe, mEstados.eBinarioNuevo, mEstados.EnLetras(mEstados.eBinarioNuevo), mEstados.eBinActualConError, mEstados.EnLetras(mEstados.eBinActualConError));
 
+                //MessageBox.Show("PAgos Simultaneos");
                 //Genera y guarda código de barras bidimensional
+
+                //MessageBox.Show("Codigo de Barras " + _Param.URLConsulta + "?&id=" + uuid.Trim() + "&re=" + trxVenta.Rfc + "&rr=" + trxVenta.IdImpuestoCliente.Trim() + "&tt=" + Math.Abs(trxVenta.Total).ToString() + "&fe=" + Utiles.Derecha(sello, 8));
+                //MessageBox.Show("Codigo de Barras " + trxVenta.RutaXml.Trim() + "cbb\\" + nomArchivo + ".jpg");
+
+
                 codigobb.GeneraCodigoDeBarras(string.Empty, 
                                             _Param.URLConsulta + "?&id=" + uuid.Trim() + "&re=" + trxVenta.Rfc + "&rr=" + trxVenta.IdImpuestoCliente.Trim() + "&tt=" +  Math.Abs(trxVenta.Total).ToString() + "&fe=" + Utiles.Derecha(sello, 8)
                                             , trxVenta.RutaXml.Trim() + "cbb\\" + nomArchivo + ".jpg");
+
                 //Genera pdf
                 reporte.generaEnFormatoPDF(rutaYNomArchivo, trxVenta.Soptype, trxVenta.Sopnumbe, trxVenta.EstadoContabilizado);
 
+                //MessageBox.Show("Formato PDF");
                 //Comprime el archivo xml
                 if (_Param.zip)
                     Utiles.Zip(rutaYNomArchivo, ".xml");

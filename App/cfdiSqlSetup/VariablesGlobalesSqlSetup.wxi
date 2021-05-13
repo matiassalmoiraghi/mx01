@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  <?define SqlDir = "C:\Users\Tiiselam\Documents\GitHub\mx01-master\Sql" ?>
+  <?define RepDir = "C:\Users\Tiiselam\Documents\GitHub\mx01-master\Rep" ?>
+</Include>

@@ -74,6 +74,12 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BarCodeInterface">
+      <HintPath>..\AdicionalDLL\BarCodeInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="MyGeneration.dOOdads_2005">
+      <HintPath>..\AdicionalDLL\MyGeneration.dOOdads_2005.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -149,14 +155,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\_DevLibrary\BarCodeInterface\BarCodeInterface.csproj">
-      <Project>{4eb082a0-76a6-4a90-a40c-c39684570cd4}</Project>
-      <Name>BarCodeInterface</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\_DevTools\MyGeneration.dOOdads\MyGeneration.dOOdads_2005.csproj">
-      <Project>{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}</Project>
-      <Name>MyGeneration.dOOdads_2005</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Comun\Comun.csproj">
       <Project>{d43004bd-e235-41be-b272-a05fc4fb9a96}</Project>
       <Name>Comun</Name>

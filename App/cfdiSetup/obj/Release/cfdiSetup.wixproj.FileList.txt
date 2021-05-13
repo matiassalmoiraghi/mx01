@@ -11,3 +11,5 @@ C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mxfe\MxFElctr_App\cfdiSetup\bin\Rel
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mxfe\MxFElctr_App\cfdiSetup\bin\Release\cfdiSetup.wixpdb
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\cfdiSetup\bin\Release\cfdiSetupV734.msi
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\cfdiSetup\bin\Release\cfdiSetupV734.wixpdb
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\cfdiSetup\bin\Release\cfdiSetupV734.msi
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\cfdiSetup\bin\Release\cfdiSetupV734.wixpdb

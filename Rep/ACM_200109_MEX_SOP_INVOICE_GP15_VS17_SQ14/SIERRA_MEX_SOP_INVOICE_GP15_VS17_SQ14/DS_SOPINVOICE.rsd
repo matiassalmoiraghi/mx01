@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>GPZMMEX</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@SOPNUMBE">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:UserDefined>true</rd:UserDefined>
+          <rd:DbType>String</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@SOPTYPE">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT * 
+FROM TII_SOPINVOICE
+WHERE SOPNUMBE = @SOPNUMBE AND SOPTYPE = @SOPTYPE</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="DOCSTATUS">
+        <DataField>DOCSTATUS</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SOPTYPE">
+        <DataField>SOPTYPE</DataField>
+        <rd:TypeName>System.Int16</rd:TypeName>
+      </Field>
+      <Field Name="SOPNUMBE">
+        <DataField>SOPNUMBE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DOCDATE">
+        <DataField>DOCDATE</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="GLPOSTDT">
+        <DataField>GLPOSTDT</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="DUEDATE">
+        <DataField>DUEDATE</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="PYMTRMID">
+        <DataField>PYMTRMID</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LOCNCODE">
+        <DataField>LOCNCODE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CUSTNMBR">
+        <DataField>CUSTNMBR</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CUSTNAME">
+        <DataField>CUSTNAME</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CSTPONBR">
+        <DataField>CSTPONBR</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PRBTADCD">
+        <DataField>PRBTADCD</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PRSTADCD">
+        <DataField>PRSTADCD</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ShipToName">
+        <DataField>ShipToName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ADDRESS1">
+        <DataField>ADDRESS1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ADDRESS2">
+        <DataField>ADDRESS2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="noExterior">
+        <DataField>noExterior</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ADDRESS3">
+        <DataField>ADDRESS3</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CITY">
+        <DataField>CITY</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="STATE">
+        <DataField>STATE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ZIPCODE">
+        <DataField>ZIPCODE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CCode">
+        <DataField>CCode</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="COUNTRY">
+        <DataField>COUNTRY</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PHNUMBR1">
+        <DataField>PHNUMBR1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PHNUMBR2">
+        <DataField>PHNUMBR2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PHONE3">
+        <DataField>PHONE3</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="FAXNUMBR">
+        <DataField>FAXNUMBR</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SHIPMTHD">
+        <DataField>SHIPMTHD</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SUBTOTAL">
+        <DataField>SUBTOTAL</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="ORSUBTOT">
+        <DataField>ORSUBTOT</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="OREMSUBT">
+        <DataField>OREMSUBT</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="FRTAMNT">
+        <DataField>FRTAMNT</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="ORFRTAMT">
+        <DataField>ORFRTAMT</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="ORMRKDAM">
+        <DataField>ORMRKDAM</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="ORTDISAM">
+        <DataField>ORTDISAM</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="MISCAMNT">
+        <DataField>MISCAMNT</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="ORMISCAMT">
+        <DataField>ORMISCAMT</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="TXRGNNUM">
+        <DataField>TXRGNNUM</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TAXAMNT">
+        <DataField>TAXAMNT</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="ORTAXAMT">
+        <DataField>ORTAXAMT</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="DOCAMNT">
+        <DataField>DOCAMNT</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumaImpuestos">
+        <DataField>SumaImpuestos</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumaRetenciones">
+        <DataField>SumaRetenciones</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="AMOUNT_LETTERS">
+        <DataField>AMOUNT_LETTERS</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ORDOCAMT">
+        <DataField>ORDOCAMT</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="CURNCYID">
+        <DataField>CURNCYID</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="RATETPID">
+        <DataField>RATETPID</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="EXGTBLID">
+        <DataField>EXGTBLID</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="XCHGRATE">
+        <DataField>XCHGRATE</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="USRTAB01">
+        <DataField>USRTAB01</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="USERDEF1">
+        <DataField>USERDEF1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="isocurrc">
+        <DataField>isocurrc</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TXRGNNUMCUST">
+        <DataField>TXRGNNUMCUST</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="metodoDePago">
+        <DataField>metodoDePago</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LNITMSEQ">
+        <DataField>LNITMSEQ</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="TipoDeComprobante">
+        <DataField>TipoDeComprobante</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="codigoPostal">
+        <DataField>codigoPostal</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="mtdpg_descripcion">
+        <DataField>mtdpg_descripcion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="usoCfdi">
+        <DataField>usoCfdi</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="rgfs_descripcion">
+        <DataField>rgfs_descripcion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="tdcmp_descripcion">
+        <DataField>tdcmp_descripcion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="uscf_descripcion">
+        <DataField>uscf_descripcion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ORDEN">
+        <DataField>ORDEN</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="CMPNTSEQ">
+        <DataField>CMPNTSEQ</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ITEMNMBR">
+        <DataField>ITEMNMBR</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ITEMDESC">
+        <DataField>ITEMDESC</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="UOFM">
+        <DataField>UOFM</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ClaveProdServ">
+        <DataField>ClaveProdServ</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ORUNTPRC">
+        <DataField>ORUNTPRC</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="UOFMsat_descripcion">
+        <DataField>UOFMsat_descripcion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ormrkdamDetail">
+        <DataField>ormrkdamDetail</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="OXTNDPRC">
+        <DataField>OXTNDPRC</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="QUANTITY">
+        <DataField>QUANTITY</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SERLTNUM">
+        <DataField>SERLTNUM</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SERLTQTY">
+        <DataField>SERLTQTY</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="BIN">
+        <DataField>BIN</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="cpredial">
+        <DataField>cpredial</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TipoRelacion">
+        <DataField>TipoRelacion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LOTATRB1">
+        <DataField>LOTATRB1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="tprl_descripcion">
+        <DataField>tprl_descripcion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="UUIDrelacionado">
+        <DataField>UUIDrelacionado</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LOTATRB2">
+        <DataField>LOTATRB2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LOTATRB3">
+        <DataField>LOTATRB3</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LOTATRB4">
+        <DataField>LOTATRB4</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="LOTATRB5">
+        <DataField>LOTATRB5</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="ADRSCODE_INVOICE">
+        <DataField>ADRSCODE_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SHIPMTHD_INVOICE">
+        <DataField>SHIPMTHD_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CNTCPRSN_INVOICE">
+        <DataField>CNTCPRSN_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ADDRESS1_INVOICE">
+        <DataField>ADDRESS1_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ADDRESS2_INVOICE">
+        <DataField>ADDRESS2_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ADDRESS3_INVOICE">
+        <DataField>ADDRESS3_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CCode_INVOICE">
+        <DataField>CCode_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="COUNTRY_INVOICE">
+        <DataField>COUNTRY_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CITY_INVOICE">
+        <DataField>CITY_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="STATE_INVOICE">
+        <DataField>STATE_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ZIP_INVOICE">
+        <DataField>ZIP_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PHONE1_INVOICE">
+        <DataField>PHONE1_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PHONE2_INVOICE">
+        <DataField>PHONE2_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PHONE3_INVOICE">
+        <DataField>PHONE3_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="FAX_INVOICE">
+        <DataField>FAX_INVOICE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ADRSCODE_SHIPMENT">
+        <DataField>ADRSCODE_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SHIPMTHD_SHIPMENT">
+        <DataField>SHIPMTHD_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CNTCPRSN_SHIPMENT">
+        <DataField>CNTCPRSN_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ADDRESS1_SHIPMENT">
+        <DataField>ADDRESS1_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ADDRESS2_SHIPMENT">
+        <DataField>ADDRESS2_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ADDRESS3_SHIPMENT">
+        <DataField>ADDRESS3_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CCode_SHIPMENT">
+        <DataField>CCode_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="COUNTRY_SHIPMENT">
+        <DataField>COUNTRY_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CITY_SHIPMENT">
+        <DataField>CITY_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="STATE_SHIPMENT">
+        <DataField>STATE_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ZIP_SHIPMENT">
+        <DataField>ZIP_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PHONE1_SHIPMENT">
+        <DataField>PHONE1_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PHONE2_SHIPMENT">
+        <DataField>PHONE2_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PHONE3_SHIPMENT">
+        <DataField>PHONE3_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="FAX_SHIPMENT">
+        <DataField>FAX_SHIPMENT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="docid">
+        <DataField>docid</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="fechaHoraEmision">
+        <DataField>fechaHoraEmision</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="regimenFiscal">
+        <DataField>regimenFiscal</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="rfcReceptor">
+        <DataField>rfcReceptor</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="nombreCliente">
+        <DataField>nombreCliente</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="total">
+        <DataField>total</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="formaDePago">
+        <DataField>formaDePago</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="folioFiscal">
+        <DataField>folioFiscal</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="frpg_descripcion">
+        <DataField>frpg_descripcion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="noCertificadoCSD">
+        <DataField>noCertificadoCSD</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="version">
+        <DataField>version</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="selloCFD">
+        <DataField>selloCFD</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="selloSAT">
+        <DataField>selloSAT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="cadenaOriginalSAT">
+        <DataField>cadenaOriginalSAT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="noCertificadoSAT">
+        <DataField>noCertificadoSAT</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="FechaTimbrado">
+        <DataField>FechaTimbrado</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="RfcPAC">
+        <DataField>RfcPAC</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="rutaYNomArchivo">
+        <DataField>rutaYNomArchivo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Leyenda">
+        <DataField>Leyenda</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="addLeyenda">
+        <DataField>addLeyenda</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="rutaYNomArchivoNet">
+        <DataField>rutaYNomArchivoNet</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="codigoBarras">
+        <DataField>codigoBarras</DataField>
+        <rd:TypeName>System.Byte[]</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

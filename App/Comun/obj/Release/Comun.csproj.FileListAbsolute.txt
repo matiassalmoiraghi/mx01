@@ -20,3 +20,9 @@ C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\Comun\obj\Release\Comun.cs
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\Comun\obj\Release\Comun.csproj.CopyComplete
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\Comun\obj\Release\Comun.dll
 C:\jcTii\Desarrollo\MEX_Factura_digital_cfdi\mx01\App\Comun\obj\Release\Comun.pdb
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Comun\bin\Release\Comun.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Comun\bin\Release\Comun.pdb
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Comun\obj\Release\Comun.csproj.CoreCompileInputs.cache
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Comun\obj\Release\Comun.csproj.CopyComplete
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Comun\obj\Release\Comun.dll
+C:\Users\Tiiselam\Documents\GitHub\mx01-master\App\Comun\obj\Release\Comun.pdb

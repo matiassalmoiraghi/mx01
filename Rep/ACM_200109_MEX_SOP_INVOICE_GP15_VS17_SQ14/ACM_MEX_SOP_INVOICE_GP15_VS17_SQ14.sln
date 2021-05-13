@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "ACM_MEX_SOP_INVOICE_GP15_VS17_SQ14", "SIERRA_MEX_SOP_INVOICE_GP15_VS17_SQ14\ACM_MEX_SOP_INVOICE_GP15_VS17_SQ14.rptproj", "{08D3508F-FE06-4A63-B1D6-A05069413933}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08D3508F-FE06-4A63-B1D6-A05069413933}.Debug|Default.ActiveCfg = Debug
+		{08D3508F-FE06-4A63-B1D6-A05069413933}.Debug|Default.Build.0 = Debug
+		{08D3508F-FE06-4A63-B1D6-A05069413933}.Debug|Default.Deploy.0 = Debug
+		{08D3508F-FE06-4A63-B1D6-A05069413933}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{08D3508F-FE06-4A63-B1D6-A05069413933}.DebugLocal|Default.Build.0 = DebugLocal
+		{08D3508F-FE06-4A63-B1D6-A05069413933}.Release|Default.ActiveCfg = Release
+		{08D3508F-FE06-4A63-B1D6-A05069413933}.Release|Default.Build.0 = Release
+		{08D3508F-FE06-4A63-B1D6-A05069413933}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33FDACED-0297-4371-ACC2-2EBCFEE570CB}
+	EndGlobalSection
+EndGlobal

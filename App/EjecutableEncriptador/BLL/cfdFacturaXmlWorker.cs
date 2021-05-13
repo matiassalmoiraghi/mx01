@@ -17,6 +17,7 @@ namespace cfd.FacturaElectronica
         private Parametros _Param;
         private ConexionAFuenteDatos _Conex;
         public string ultimoMensaje = "";
+       
 
         public cfdFacturaXmlWorker(ConexionAFuenteDatos Conex, Parametros Param)
         {
@@ -35,6 +36,7 @@ namespace cfd.FacturaElectronica
             try
             {
                 String msj=String.Empty;
+                String msj_pac = String.Empty;
                 ReportProgress(0, "Revisando configuración...\r\n");
                 object[] args = e.Argument as object[];
                 vwCfdTransaccionesDeVenta trxVenta = (vwCfdTransaccionesDeVenta)args[0];
@@ -50,11 +52,17 @@ namespace cfd.FacturaElectronica
                 ReglasME maquina = new ReglasME(_Param);
                 ValidadorXML validadorxml = new ValidadorXML(_Param);
                 TransformerXML loader = new TransformerXML(_Param);
+                ReportProgress(0, "Ruta Certificado PFX PAC: " + trxVenta.Ruta_clavePac + " Contraseña PAC " + trxVenta.Contrasenia_clavePac + "\r\n");
+                ReportProgress(0, "Ruta Certificado PAC: " + trxVenta.Ruta_certificadoPac + "\r\n");
 
-                PAC representanteSat = new PAC(trxVenta.Ruta_clavePac, trxVenta.Contrasenia_clavePac, _Param);
+                PAC representanteSat = new PAC(trxVenta.Ruta_certificadoPac, trxVenta.Ruta_clavePac, trxVenta.Contrasenia_clavePac, _Param, out msj_pac);
                 String Sello = string.Empty;
+                ReportProgress(0, "." + msj_pac + "\r\n");
+
+
 
                 ReportProgress(0, "Iniciando proceso...\r\n");
+               
                 do
                 {
                     _Param.PrefijoDefaultFactura = trxVenta.Sopnumbe.Substring(_Param.PosicionPrefijoFactura, 1);

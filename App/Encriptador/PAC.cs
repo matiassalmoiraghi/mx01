@@ -2,6 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography.X509Certificates;
+using System.Security.Cryptography;
+using System.Security.Permissions;
+using System.IO;
+
+
 using System.Xml;
 using Comun;
 
@@ -23,14 +28,29 @@ namespace Encriptador
 //            set { _uuid = value; }
         }
 
-        public PAC(string rutaPfx, string clave, Parametros param)
+        public PAC(string rutaPAC,string rutaPfx, string clave, Parametros param, out string msj_pac)
         {
             try
             {
                 _ws = new interfactura.WebService1();
                 _ws.ClientCertificates.Add(new X509Certificate(rutaPfx, clave));
-                //_ws.ClientCertificates.Add(new X509Certificate(@"C:\GPUsuario\GPCfdi\feGettyMex\fePAC\tst-0000593\tst-0000593.pfx", clave));
+                //_ws.ClientCertificates.Add(new X509Certificate(rutaPAC));
                 _ws.Url = param.URLwebServPAC;
+
+                msj_pac = "...Certificados agregados" + Environment.NewLine;
+                foreach (X509Certificate x509 in _ws.ClientCertificates)
+                {
+                    try
+                    {
+                        msj_pac += "..Certificado : " + x509.ToString(true);
+                        x509.Reset();
+                    }
+                    catch (CryptographicException)
+                    {
+                        Console.WriteLine("Information could not be written out for this certificate.");
+                    }
+                }
+
             }
             catch (Exception ti)
             {
@@ -77,7 +97,10 @@ namespace Encriptador
                 else
                 {
                     String msjError = timbre.SelectSingleNode("/Resultado/@IdRespuesta").Value + " " + timbre.SelectSingleNode("Resultado/@Descripcion").Value;
-                    msjError += ". Error reportado por el PAC al timbrar el comprobante."+Environment.NewLine;
+                    msjError += Environment.NewLine + ". Error reportado por el PAC al timbrar el comprobante." +Environment.NewLine;
+                    msjError += "..... URL: " + _ws.Url + Environment.NewLine;
+                   
+                   
                     msjError += timbre.OuterXml.ToString();
                     throw new ArgumentException(msjError);
                 }
